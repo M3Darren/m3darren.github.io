@@ -1,0 +1,319 @@
+.hitokoto_text_div {
+	text-align: center;
+	min-height: 80px;
+	width: 100%;
+	max-width: 900px;
+	position: relative;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.hitokoto_text {
+	text-align: center;
+
+	/* style="font-size: xx-large; border-radius: 40px; background-color: rgba(70, 70, 70, 0.8); padding: 12px; font-weight: bold; color: #F4F4F4;" */
+
+	font-size: large;
+	border-radius: 40px;
+	background-color: rgba(70, 70, 70, 0.8);
+	padding: 12px;
+	font-weight: bold;
+	color: #F4F4F4;
+
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hitokoto_text:before {
+	position: absolute;
+	z-index: -1;
+	content: '';
+	left: calc(50% - 10px);
+	bottom: 0;
+	border-style: solid;
+	border-width: 0px 0px 0 0px;
+	border-color: rgba(70, 70, 70, 0.8) transparent transparent transparent;
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hitokoto_text:hover,
+.hitokoto_text:focus,
+.hitokoto_text:active {
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.hitokoto_text:hover:before,
+.hitokoto_text:focus:before,
+.hitokoto_text:active:before {
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+	border-width: 10px 10px 0 10px;
+}
+
+.sousuo {
+	/* padding: 35px 0; */
+}
+
+.search {
+	position: relative;
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.search-box {
+	height: 50px;
+	/*box-shadow: 0px 0px 2px 0px #ccc;*/
+	border-radius: 50px;
+	overflow: hidden;
+	width: 100%;
+	display: -webkit-flex;
+	/* Safari */
+	display: flex;
+	/* flex-wrap: wrap; */
+	border: 1px solid #e6e6e6;
+	background-color: #ffffff;
+}
+
+.search-engine-img {
+	height: 28px;
+	width: 28px;
+	margin: 11px;
+	float: left;
+	border-radius: 5px;
+	/* z-index: 99; */
+	background: none;
+	fill: currentColor;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+
+.search-engine-img:hover {
+	/* margin: 7px;
+	height: 36px;
+	width: 36px; */
+	transform: scale(1.5);
+}
+
+.search-input {
+	box-sizing: border-box;
+	flex: 1;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #303030;
+	border: none;
+	outline: none;
+	padding-left: 6px;
+	width: 100%;
+}
+
+input::-webkit-input-placeholder {
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #ccc;
+}
+
+.search-btn-span {
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border: none;
+	text-align: center;
+	outline: none;
+}
+
+.search-btn-img {
+	color: #2098D1;
+	height: 28px;
+	width: 28px;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+	margin: 11px;
+	float: right;
+	/* border-bottom: 1px solid #e8e8e8; */
+	background: none;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+
+.search-btn-img:hover {
+	color: #ff5500;
+	/* width: 36px;
+	height: 36px;
+	margin: 7px; */
+	transform: scale(1.5);
+}
+
+.search-engine {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	padding: 15px 0 0 15px;
+	border-radius: 25px;
+	box-shadow: 0px 5px 20px 0px #cbcaca;
+	transition: all 0.3s;
+	display: none;
+	z-index: 999;
+
+}
+
+.search-engine-head {
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-right: 15px;
+}
+
+.search-engine-tit {
+	float: left;
+	margin: 0;
+	font-size: 14px;
+	color: #999;
+}
+
+
+.search-engine ul::before {
+	content: '';
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: -15px;
+	left: 18px;
+	border-top: 5px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 13px solid #fff;
+	border-left: 8px solid transparent;
+}
+
+.search-engine-list::after {
+	content: '';
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top: -17px;
+	left: 1px;
+}
+
+.search-engine-list {
+	display: flex;
+	/* 让一行中的元素平均分配宽度 */
+	justify-content: space-around;
+	/* justify-content: center; */
+	align-items: center;
+	/* 元素在一行放不下时自动换行 */
+	flex-wrap: wrap;
+}
+
+.search-engine-list li {
+	float: left;
+	width: 100px;
+	line-height: 50px;
+	font-size: 15px;
+	padding: 5px 10px 5px 10px;
+	margin: 0 30px 30px 0;
+	background: #f4f4f4;
+	border-radius: 15px;
+	color: #1e1e1e;
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2),
+		-15px -15px 30px rgba(255, 255, 255, 1);
+	/* 过渡时间 ease-out是指先快速 后慢速 */
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+}
+
+.search-engine-list li:hover {
+	/* background: #55aaff; */
+	/* inset 是内部阴影 默认是外部阴影outset */
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 rgba(255, 255, 255, 0.8),
+		inset 15px 15px 30px rgba(0, 0, 0, 0.1),
+		inset -15px -15px 30px rgba(255, 255, 255, 1);
+}
+
+.search-engine-item-img {
+	width: 40px;
+	height: 40px;
+	vertical-align: -15px;
+	padding-right: 5px;
+}
+
+#content .content-box {
+	/* padding-top: 51px */
+	padding-top: 10px;
+}
+
+/* .content-box {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+} */
+
+/* .content-box .list-box {
+	background: #FFF;
+	padding: 20px 10px 0px 10px;
+	margin: 0;
+} */
+
+
+
+.search-suggestion {
+	position: absolute;
+	left: 51px;
+	top: 49px;
+	/* width: 85%; */
+	right: 49px;
+	background: #FFF;
+	border-radius: 4px;
+	display: none;
+	/* border: #0078FF;
+	border-style: solid;
+	border-width: medium; */
+	border-left: 4px solid #0078FF;
+	border-right: 4px solid #0078FF;
+	border-bottom: 4px solid #0078FF;
+	border-top: 1px solid #b0b0b0;
+	z-index: 998;
+	padding-bottom: 10px;
+}
+
+.search-suggestion-list {
+	/* display: flex; */
+	display: block;
+	padding: 5px;
+	
+	/* 让一行中的元素平均分配宽度 */
+	/* justify-content: space-around; */
+}
+
+.search-suggestion-list li {
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	color: #303030;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	/* border-width: thick; */
+	/* border-style: solid; */
+	/* border-color: #000000; */
+	cursor: pointer;
+}
+
+.search-suggestion-list li:hover {
+	background-color: #e7e7e7 !important; 
+	color: #0078FF !important;
+}
