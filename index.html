@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>个人NAS入口</title>
+		<link rel="shortcut icon" href="files/logo.png" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<link rel="stylesheet" href="css/searchbar.css" media="screen and (min-width:414px)"/>
+		<link rel="stylesheet" href="css/searchbar_phone.css" media="screen and (max-width:414px)"/>
+		<link rel="stylesheet" href="css/linkBtns.css" media="screen and (min-width:432px)"/>
+		<link rel="stylesheet" href="css/linkBtns_phone.css" media="screen and (max-width:432px)"/>
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- 我的阿里图标库 -->
+		<script src="https://at.alicdn.com/t/font_2761549_j879lql27mj.js"></script>
+		
+		<script src = "https://code.jquery.com/jquery-1.11.0.min.js" > </script>
+
+		<!-- 百度统计 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?fb30a75f4fbe52eb479a6c5491476e79";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
+	</head>
+	
+	
+
+	<body OnLoad="typetext()&onresizedfun()" onclick="playColor(event)&playFuQiang(event)" ontouch="toucuPlayColor(event)&touchPlayFuQiang(event)">
+		<script src="./js/click-colorful.js"></script>
+
+		<header style="text-align: right;">
+			<div style="width: 100%; ">
+				<svg class="header-img-Lan" aria-hidden="true" onclick="switchWanOrLan(event)">
+					<use xlink:href="#icon-Lan"></use>
+				</svg>
+							
+				<svg class="header-img-huanyihuan" aria-hidden="true" onclick="reqAndType(event)">
+					<use xlink:href="#icon-huanyihuan"></use>
+				</svg>
+				
+				<svg class="header-img-pic" aria-hidden="true" onclick="turnStaticBg_s(event)">
+					<use xlink:href="#icon-picture"></use>
+				</svg>
+				<svg class="header-img-fengche" aria-hidden="true" onclick="turnBg(event)">
+					<use xlink:href="#icon-fengche"></use>
+				</svg>
+				
+			</div>
+		</header>
+		
+		<div id="content">
+			
+			<!--内容-->
+			<div class="main">
+				<div class="hitokoto_text_div">
+					<a id="hitokoto" class="hitokoto_text" ></a>
+				</div>
+				
+				<div class="container content-box">
+					
+					<!--搜索栏-->
+					<section class="sousuo">
+						<div class="search">
+							<div class="search-box">
+								<span class="search-btn-span">
+									<svg class="search-engine-img" aria-hidden="true">
+									  <use xlink:href="#icon-baidu" id="search-engine-img-use"></use>
+									</svg>
+								</span>
+								<input type="text" id="txt" class="search-input" placeholder="选择引擎,输入关键字,回车/Enter搜索" />
+								
+								<span class="search-btn-span" id="search-btn">
+									<svg class="search-btn-img" aria-hidden="true">
+										<use xlink:href="#icon-sousuo"></use>
+									</svg>
+								</span>
+							</div>
+							
+							<!-- 搜索引擎 -->
+							<div class="search-engine">
+								<div class="search-engine-head">
+									<strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
+								</div>
+								<ul class="search-engine-list">
+								</ul>
+							</div>
+							
+							<!-- 搜索提示 -->
+							<div class="search-suggestion">
+								<ul class="search-suggestion-list">
+								</ul>
+							</div>
+						</div>
+					</section>
+					
+					<!-- 快速链接区 -->
+					<section class="linkBtns">
+						<!-- 切换内网链接隐藏入口 -->
+						<div style="margin: auto; text-align: center; height: 10px;">
+							<a style="color: transparent; padding-left: 20px;padding-left: 20px;" onclick="switchWanOrLanPre(event)"></a>
+						</div>
+						
+						<div class="linkBtnsBox">
+							<ul class="linkBtns-list">
+							</ul>
+						</div>
+					</section>
+					
+				</div>
+			</div>
+		</div>
+		
+		<footer style="text-align: center; margin-top: 100px;">
+			<div style="background-color: rgba(255,255,255,0.5); border-radius: 10px; display: inline; padding: 8px;font-size: small;">
+				<a >©2021 Minifake | [ICP证]:</a>
+				<a href="https://beian.miit.gov.cn" target="_blank">滇ICP备2021006290号</a>
+			</div>
+		</footer>
+		
+		
+		<iframe id="bg-iframe" name="ibg_iframe" scrolling="no"  onresize="onresizedfun()" ></iframe>
+		
+		<script src="js/searchbar.js"></script>
+		<script src="js/linkBtns.js"></script>
+
+		<script src="js/navigation.js"></script>
+		
+		
+	</body>
+
+</html>
