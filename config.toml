@@ -1,4 +1,4 @@
-baseURL               = "http://dl666.qzz.io"
+baseURL               = "https://dl666.qzz.io"
 languageCode          = "zh-CN"
 title                 = "小A猪崽 | 好用的导航"
 theme                 = "WebStack-Hugo"
