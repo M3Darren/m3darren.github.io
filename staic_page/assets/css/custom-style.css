@@ -188,12 +188,12 @@ footer.main-footer .footer-text a:hover {
     background-color: #d8d8d8;*/
 
   /* 基础背景设置 */
-  background-image: url('./assets/images/bg.jpg');
+  background-image: url('../images/bg.jpg');
   background-repeat: repeat;
   background-position: center;
 
   /* 默认尺寸策略 */
-  background-size: cover; /* 优先覆盖整个区域 */
+  background-size: 100%; /* 优先覆盖整个区域 */
 
   /* 移动端优化 */
   @media (max-width: 768px) {
@@ -205,6 +205,6 @@ footer.main-footer .footer-text a:hover {
   @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-    background-image: url('./assets/images/bg.jpg');
+    background-image: url('images/bg.jpg');
   }
 }

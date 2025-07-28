@@ -2,35 +2,19 @@
 - taxonomy: 主站推荐
   icon: far fa-star
   links:
-    - title: 小A猪崽
-      logo: xazz.ico
-      url: https://nav.xazz.top
-      description: 丰富的导航站
-    - title: 博客
-      logo: 博客.ico
-      url: https://xazz.top
-      description: 站长的博客
-    - title: 关于我
-      logo: 关于我.ico
-      url: https://doks.xazz.top/blog
-      qrcode: assets/images/my.png
-      description: 站长的个人介绍
-    - title: 文档库
-      logo: doks.ico
-      url: https://doks.xazz.top
-      description: 小A猪崽的文档库
-    - title: 探针
-      logo: 探针.svg
-      url: https://vps.xazz.top
-      description: 哪吒探针管理
+    #    - title: 关于我
+    #      logo: 关于我.ico
+    #      url: https://doks.xazz.top/blog
+    #      qrcode: assets/images/my.png #鼠标划过显示图片
+    #      description: 站长的个人介绍
     - title: 开源
       logo: github.ico
       url: https://github.com/i-kirito/nav.github.io
       description: 导航站GitHub开源
-    - title: Chatgpt镜像
+    - title: Chatgpt
       logo: chatgpt.ico
-      url: https://chat.xazz.top/
-      description: 不需要加速也能上
+      url: https://chatgtp.com/
+      description: 官方GPT
     - title: Wallhaven
       logo: wallhaven.ico
       url: https://wallhaven.cc
@@ -39,10 +23,7 @@
       logo: bilibili.ico
       url: https://bilibili.com/
       description: 年轻人的视频平台
-    - title: Steam
-      logo: steam.ico
-      url: https://store.steampowered.com/
-      description: 大伙都在玩的游戏平台
+
     - title: Notion
       logo: notion.png
       url: https://www.notion.so/
@@ -51,7 +32,9 @@
       logo: google.ico
       url: https://www.google.com/
       description: 谷歌搜索，最好用的搜索引擎
-
+    - title: 高清图片
+      logo:
+      url: https://www.pexels.com/
 - taxonomy: 编程学习
   icon: fas fa-laptop-code fa-lg
   list:
@@ -73,14 +56,10 @@
           logo: js.ico
           url: https://www.jsdelivr.com/
           description: 利用jsdelivr加速自己的图床
-        - title: GitHub主页美化
+        - title: GitHub美化主页
           logo: fork.ico
           url: https://zzetao.github.io/awesome-github-profile/
           description: 查看GitHub开源作者的美化fork他们
-        - title: Runoob
-          logo: cainiao.ico
-          url: https://www.runoob.com/
-          description: Web菜鸟教程
         - title: Markdown
           logo: markdown.ico
           url: https://markdown.com.cn/
@@ -93,10 +72,6 @@
           logo: js之家.ico
           url: http://www.htmleaf.com/
           description: 扩展你的js插件库
-        - title: 像素大厨(已失效)
-          logo: fancynode.png
-          url: https://www.fancynode.com.cn/
-          description: 从设计到代码，让团队高效协作
         - title: Bootstrap Studio
           logo: bs.ico
           url: https://bootstrapstudio.io/
@@ -113,7 +88,7 @@
           logo: badges.png
           url: https://ileriayo.github.io/markdown-badges/
           description: 获取markdown写法的badges包
-        - title: 1panel 
+        - title: 1panel
           logo: 1panel.png
           url: https://1panel.cn/
           description: 开源的服务器web管理面板
@@ -386,7 +361,7 @@
         - title: 可道云
           logo: 可道云.ico
           usrl: https://kodcloud.com/
-          description: 云端存储&协同办公新体验        
+          description: 云端存储&协同办公新体验
         - title: 蓝奏云
           logo: 蓝奏云.ico
           url: https://www.lanzoui.com/
@@ -412,7 +387,7 @@
         - title: Aconvert
           logo: ac.ico
           url: https://www.aconvert.com/
-          description: 图片转化为ico格式         
+          description: 图片转化为ico格式
         - title: icon icons
           logo: icon-icons.svg
           url: https://icon-icons.com/
@@ -606,7 +581,7 @@
           url: https://design.meitu.com/
           logo: meitudata.svg
           description: 告诉ai标题生成大纲PPT
-          
+
 - taxonomy: 推荐应用
   icon: fab fa-app-store-ios fa-lg
   list:

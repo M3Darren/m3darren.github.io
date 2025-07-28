@@ -138,26 +138,26 @@ document.getElementById(id).innerHTML = "小A猪崽一直在追随大家的步�
 }
 setInterval("ShowRunTime('RunTime')", 1000);
 </script>
-<script>
-    // 弹窗效果
-    const Toast = Swal.mixin({
-            toast: true,
-            position: 'bottom',
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        })
-
-        Toast.fire({
-            icon: 'success',
-            title: '网页正式发布，欢迎访问',
-            text: '左下角提交网站，收录！',
-            heightAuto: 'false'
-        })
-</script>
+<!--<script>-->
+<!--    // 弹窗效果-->
+<!--    const Toast = Swal.mixin({-->
+<!--            toast: true,-->
+<!--            position: 'bottom',-->
+<!--            showConfirmButton: false,-->
+<!--            timer: 3000,-->
+<!--            timerProgressBar: true,-->
+<!--            didOpen: (toast) => {-->
+<!--                toast.addEventListener('mouseenter', Swal.stopTimer)-->
+<!--                toast.addEventListener('mouseleave', Swal.resumeTimer)-->
+<!--            }-->
+<!--        })-->
+<!--        -->
+<!--        Toast.fire({-->
+<!--            icon: 'success',-->
+<!--            title: '网页正式发布，欢迎访问',-->
+<!--            text: '左下角提交网站，收录！',-->
+<!--            heightAuto: 'true'-->
+<!--        })-->
+<!--</script>-->
 </body>
 </html>
